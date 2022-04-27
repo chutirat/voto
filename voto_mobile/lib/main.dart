@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: VotoColors.primary,
         fontFamily: GoogleFonts.inter().fontFamily,
         textTheme: const TextTheme(
-          headline1: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+          headline1: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, color: VotoColors.white),
           headline2: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500),
           headline3: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500),
           bodyText1: TextStyle(fontSize: 14.0),
@@ -41,7 +41,6 @@ class MyApp extends StatelessWidget {
         '/poll_result_page': (context) => const PollResultPage(),
         '/random_result_page': (context) => const RandomResultPage(),
       },
-      // home: const LoginPage(),
     );
   }
 }
