@@ -1,23 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:voto_mobile/utils/color.dart';
+import 'package:voto_mobile/widgets/voto_scaffold.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({ Key? key }) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  void openMenu() {
+
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(children: [
-         const Text('Login'),
-          ElevatedButton(
-             onPressed: () {
-               Navigator.pop(context);
-             },
-             child: const Text('Back'),
-             style: ButtonStyle(
-                 backgroundColor: MaterialStateProperty.resolveWith(
-                     (states) => VotoColors.primary)))
-        ]),
+    return VotoScaffold(
+      title: 'My team',
+      body: Column(
+        children: const [
+          Text('Hello world')
+        ]
+      ),
     );
   }
 }
