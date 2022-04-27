@@ -8,16 +8,16 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Row(children: [
-        const Text('Home'),
-        ElevatedButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            child: const Text('Back'),
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.resolveWith(
-                    (states) => VotoColors.primary)))
-      ]),
+         const Text('Login'),
+          ElevatedButton(
+             onPressed: () {
+               Navigator.pop(context);
+             },
+             child: const Text('Back'),
+             style: ButtonStyle(
+                 backgroundColor: MaterialStateProperty.resolveWith(
+                     (states) => VotoColors.primary)))
+        ]),
     );
   }
 }
