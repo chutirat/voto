@@ -35,10 +35,6 @@ class SignUpClick extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            style: ButtonStyle(
-              backgroundColor:
-                  MaterialStateProperty.resolveWith((states) => Colors.white),
-            ),
           )
         ],
       ),
