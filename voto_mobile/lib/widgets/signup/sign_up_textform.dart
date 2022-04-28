@@ -46,7 +46,7 @@ class _SignUpTextFormState extends State<SignUpTextForm> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-        top: 75,
+        top: 55,
         right: 55,
         left: 55,
         bottom: 30,
