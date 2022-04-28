@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:voto_mobile/utils/color.dart';
 
-class LoginClick extends StatelessWidget {
-  const LoginClick({Key? key}) : super(key: key);
+class ButtonClick extends StatelessWidget {
+  const ButtonClick({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-        top: 10,
+        top: 15,
         right: 25,
         left: 25,
       ),
@@ -22,7 +22,7 @@ class LoginClick extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.all(0),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(15.0),
+                borderRadius: BorderRadius.circular(47.0),
               ),
             ),
             child: Ink(
@@ -32,10 +32,10 @@ class LoginClick extends StatelessWidget {
               ),
               child: Container(
                 padding: const EdgeInsets.all(8),
-                width: MediaQuery.of(context).size.width * 1,
+                width: MediaQuery.of(context).size.width * 0.8,
                 height: 45,
                 child: Text(
-                  "Log in",
+                  "Sign Up",
                   style: GoogleFonts.inter(fontSize: 16),
                   textAlign: TextAlign.center,
                 ),

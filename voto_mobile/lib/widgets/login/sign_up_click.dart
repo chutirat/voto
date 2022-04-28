@@ -26,7 +26,7 @@ class SignUpClick extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, '/home_page');
+              Navigator.pushNamed(context, '/signup_page');
             },
             child: const Text(
               'Sign up',
